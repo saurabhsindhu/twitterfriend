@@ -18,6 +18,11 @@
 		FED77686177707C1004ECA85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED77685177707C1004ECA85 /* Default-568h@2x.png */; };
 		FED77689177707C1004ECA85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED77688177707C1004ECA85 /* ViewController.m */; };
 		FED7768C177707C1004ECA85 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED7768A177707C1004ECA85 /* ViewController.xib */; };
+		FED776931777080B004ECA85 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED776921777080B004ECA85 /* Accounts.framework */; };
+		FED7769517770815004ECA85 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED7769417770815004ECA85 /* Social.framework */; };
+		FED776971777081F004ECA85 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED776961777081E004ECA85 /* Twitter.framework */; };
+		FED7769A17770886004ECA85 /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7769917770886004ECA85 /* TwitterConnection.m */; };
+		FED7769D177708AF004ECA85 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7769C177708AF004ECA85 /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,13 @@
 		FED77687177707C1004ECA85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FED77688177707C1004ECA85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FED7768B177707C1004ECA85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FED776921777080B004ECA85 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FED7769417770815004ECA85 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FED776961777081E004ECA85 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		FED7769817770886004ECA85 /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
+		FED7769917770886004ECA85 /* TwitterConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnection.m; sourceTree = "<group>"; };
+		FED7769B177708AF004ECA85 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		FED7769C177708AF004ECA85 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED776971777081F004ECA85 /* Twitter.framework in Frameworks */,
+				FED7769517770815004ECA85 /* Social.framework in Frameworks */,
+				FED776931777080B004ECA85 /* Accounts.framework in Frameworks */,
 				FED77670177707C1004ECA85 /* UIKit.framework in Frameworks */,
 				FED77672177707C1004ECA85 /* Foundation.framework in Frameworks */,
 				FED77674177707C1004ECA85 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +71,9 @@
 		FED77663177707C1004ECA85 = {
 			isa = PBXGroup;
 			children = (
+				FED776961777081E004ECA85 /* Twitter.framework */,
+				FED7769417770815004ECA85 /* Social.framework */,
+				FED776921777080B004ECA85 /* Accounts.framework */,
 				FED77675177707C1004ECA85 /* twitterfriend */,
 				FED7766E177707C1004ECA85 /* Frameworks */,
 				FED7766D177707C1004ECA85 /* Products */,
@@ -83,6 +101,10 @@
 		FED77675177707C1004ECA85 /* twitterfriend */ = {
 			isa = PBXGroup;
 			children = (
+				FED7769817770886004ECA85 /* TwitterConnection.h */,
+				FED7769917770886004ECA85 /* TwitterConnection.m */,
+				FED7769B177708AF004ECA85 /* Tweet.h */,
+				FED7769C177708AF004ECA85 /* Tweet.m */,
 				FED7767E177707C1004ECA85 /* AppDelegate.h */,
 				FED7767F177707C1004ECA85 /* AppDelegate.m */,
 				FED77687177707C1004ECA85 /* ViewController.h */,
@@ -176,6 +198,8 @@
 				FED7767C177707C1004ECA85 /* main.m in Sources */,
 				FED77680177707C1004ECA85 /* AppDelegate.m in Sources */,
 				FED77689177707C1004ECA85 /* ViewController.m in Sources */,
+				FED7769A17770886004ECA85 /* TwitterConnection.m in Sources */,
+				FED7769D177708AF004ECA85 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

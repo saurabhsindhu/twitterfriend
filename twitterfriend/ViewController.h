@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    
+ 
+    IBOutlet UITableView *table;
+    int currentMaxDisplayedCell;
+    BOOL dataLoading;
+    NSMutableArray *tweets;
+    NSMutableArray *fndname;
+    
+    UIAlertView *loadingAlertView;
+    
+}
 
 @end
